@@ -70,7 +70,9 @@ const createUser = async (req, res, next) => {
       to: Email,
       subject: "Email Verification",
       html: `<p>Please verify your email by clicking the link below:</p>
-             <a href="http://localhost:5173/dashboard?token=${token}">Verify Email</a>`,
+             <a href="https://roddee-ecommerce.vercel.app/dashboard?token=${token}">Verify Email</a>
+             <p>Or, you can click this link below</p>
+             <a href="https://roddee-ecommerce.vercel.app/dashboard?token=${token}">https://roddee-ecommerce.vercel.app/dashboard?token=${token}</a>`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
