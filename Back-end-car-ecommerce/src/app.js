@@ -43,7 +43,7 @@ app.use("/api/car-list", carlistRoute);
 
 
 //Handle404
-app.use(notfoundMiddleware);
+// app.use(notfoundMiddleware);
 //Handle Error
 app.use(errorHandlerMiddleware);
 // Connect to database
